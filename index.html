@@ -3,10 +3,113 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Авто Шум</title>
+	<title>АвтоШум</title>
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-	
+	<header class="header container">
+		<div class="header__top">
+			<div class="header__top-select">
+				<select name="select" class="" id="sel1">
+				  <option value="value1">ОМСК</option>
+				  <option value="value2">мск</option>
+				</select>
+			</div>
+			<div class="header__top-right">				
+				<ul>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">Вопрос-ответ</a></li>
+					<li><a href="#">Полезно знать</a></li>
+					<li><a href="#">Акции</a></li>
+				</ul>
+				<div class="header__search">
+					<input type="text" name="" class="" placeholder="Поиск">
+					<button><img src="images/svg/search-icon.svg"></button>
+				</div>
+			</div>
+		</div>
+		<div class="header__middle">
+			<div class="header__logo">
+
+				<span class="header__logo-image">
+					<img src="images/png/logo.png">
+				</span>
+
+				<span class="header__logo-description">
+					Федеральная сеть шумоизоляции автомобилей
+				</span>
+
+			</div>
+			
+			<div class="header__middle-right">
+				<span>
+					<a href="tel:+73812218254" class="header__number">+7 381 221 82 54</a>
+					<p class="header__workTime">
+						Пн - Пт 10:00 - 19:00, Вс - выходной
+					</p>
+				</span>
+				<button class="header__button">Заказать звонок</button>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<ul>
+				<li>
+					<a href="#">
+						<span>
+							<img src="images/png/calc-icon.png">
+						</span>
+						<span>Расчитать стоимость</span>
+					</a>
+				</li>
+				<li><a href="#">Примеры работ</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Купить материалы</a></li>
+				<li><a href="#">О компании</a></li>
+			</ul>
+		</div>
+	</header>
+	<header class="header-sm">
+		<div class="header-sm__logo">
+			<img src="images/png/logo.png">
+		</div>
+		<button><img src="images/svg/search-icon-sm.svg"></button>
+		<button><img src="images/svg/phone-icon.svg"></button>
+		<button class="burgerButton" onclick="toogleBurger()" id="burgerButton">
+			<div class="line"></div>
+		</button>
+		<div class="burgerMenu" id="burgerMenu">
+			<div class="burgerMenu__top">
+				<a href="tel:+73812218254" class="burgerMenu__number">+7 381 221 82 54</a>
+				<p class="burgerMenu__workTime">Пн - Пт 10:00 - 19:00, Вс - выходной</p>
+			</div>
+			<div class="burgerMenu__middle">
+				<button class="burgerMenu__calc">
+					<img src="images/svg/calc-icon-w.svg">
+					<span>Рассчитать стоимость</span>
+				</button>
+				<ul>
+					<li><a href="#">Примеры работ</a></li>
+					<li><a href="#">Услуга</a></li>
+					<li><a href="#">Купить материалы</a></li>
+					<li><a href="#">О компании</a></li>
+				</ul>
+			</div>
+			<hr>
+			<div class="burgerMenu__bottom">
+				<ul>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Оплата и доставка</a></li>
+					<li><a href="#">Вопрос-ответ</a></li>
+					<li><a href="#">Полезно знать</a></li>
+					<li><a href="#">Акции</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
